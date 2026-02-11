@@ -6,6 +6,11 @@ Welcome to my journey of building a scalable microservices architecture using Go
 [![Docker](https://img.shields.io/badge/Docker-24.0+-blue.svg)](https://www.docker.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## 📚 Docs
+
+- [`docs/PROJECT_OVERVIEW.vi.md`](docs/PROJECT_OVERVIEW.vi.md) - Tổng quan kiến trúc, luồng chính, deployments, cách chạy
+- [`docs/PROJECT_STRUCTURE.vi.md`](docs/PROJECT_STRUCTURE.vi.md) - Giải thích chi tiết từng thư mục, file và demo luồng thực tế
+
 ## ❓ How to Run
 
 1. Clone the repository
@@ -38,10 +43,10 @@ make compose-down
 
 ## 🌟 Key Features
 
--   **Event-Driven Architecture** with Kafka & RabbitMQ
--   **Database Master-Slave Replica** with PostgreSQL Cluster
--   **Observability** with OpenTelemetry & Grafana Stack
--   **Production-Grade** Infrastructure Setup
+- **Event-Driven Architecture** with Kafka & RabbitMQ
+- **Database Master-Slave Replica** with PostgreSQL Cluster
+- **Observability** with OpenTelemetry & Grafana Stack
+- **Production-Grade** Infrastructure Setup
 
 ## 🏗 Architecture Overview
 
@@ -94,11 +99,11 @@ sequenceDiagram
 
 **Key Features**:
 
--   JWT-based authentication
--   Email verification with 10-minute expiry
--   Anti-spam protection (1-minute cooldown)
--   CQRS pattern with master-slave replication
--   Horizontal scaling with pgpool-II
+- JWT-based authentication
+- Email verification with 10-minute expiry
+- Anti-spam protection (1-minute cooldown)
+- CQRS pattern with master-slave replication
+- Horizontal scaling with pgpool-II
 
 ---
 
@@ -117,9 +122,9 @@ graph TD
 
 **Key Features**:
 
--   Real-time inventory synchronization
--   Event sourcing for product changes
--   CQRS pattern with master-slave replication
+- Real-time inventory synchronization
+- Event sourcing for product changes
+- CQRS pattern with master-slave replication
 
 ---
 
@@ -239,10 +244,10 @@ sequenceDiagram
 
 **Key Features**:
 
--   Redis distributed locking for idempotency
--   Event-driven order processing
--   Delayed message handling with RabbitMQ
--   State transition management with PostgreSQL
+- Redis distributed locking for idempotency
+- Event-driven order processing
+- Delayed message handling with RabbitMQ
+- State transition management with PostgreSQL
 
 ---
 
@@ -252,10 +257,10 @@ sequenceDiagram
 
 **Key Features**:
 
--   RabbitMQ consumer
--   Template-based email rendering
--   Send retry mechanism with exponential backoff
--   MailHog integration for development
+- RabbitMQ consumer
+- Template-based email rendering
+- Send retry mechanism with exponential backoff
+- MailHog integration for development
 
 ---
 
@@ -265,10 +270,10 @@ sequenceDiagram
 
 **Key Features**:
 
--   JWT validation middleware
--   Rate limiting per service
--   Request/Response transformation
--   Prometheus metrics collection
+- JWT validation middleware
+- Rate limiting per service
+- Request/Response transformation
+- Prometheus metrics collection
 
 ## 🏭 Infrastructure Architecture
 
@@ -319,41 +324,41 @@ graph TD
 
 **Monitoring Features**:
 
--   Real-time service metrics
--   Distributed tracing across services
--   Centralized logging with labels
--   Performance dashboards per service
+- Real-time service metrics
+- Distributed tracing across services
+- Centralized logging with labels
+- Performance dashboards per service
 
 ## 🛠️ Technology Stack
 
 **Languages & Frameworks**
 
--   Go 1.23+
--   Gin Web Framework
+- Go 1.23+
+- Gin Web Framework
 
 **Databases**
 
--   PostgreSQL 16 with pgpool-II
--   Bitnami Redis Latest Cluster
+- PostgreSQL 16 with pgpool-II
+- Bitnami Redis Latest Cluster
 
 **Message Brokers**
 
--   Bitnami Kafka Latest Cluster
--   RabbitMQ 4.0 Cluster
+- Bitnami Kafka Latest Cluster
+- RabbitMQ 4.0 Cluster
 
 **Infrastructure**
 
--   Docker Swarm
--   HAProxy for load balancing
--   MailHog SMTP server
+- Docker Swarm
+- HAProxy for load balancing
+- MailHog SMTP server
 
 **Observability**
 
--   Prometheus
--   Grafana
--   Loki
--   Tempo
--   OpenTelemetry
+- Prometheus
+- Grafana
+- Loki
+- Tempo
+- OpenTelemetry
 
 ## 📈 Deployment Architecture
 
